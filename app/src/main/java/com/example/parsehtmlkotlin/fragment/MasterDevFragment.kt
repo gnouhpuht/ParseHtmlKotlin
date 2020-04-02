@@ -13,6 +13,6 @@ class MasterDevFragment: Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return super.onCreateView(inflater, container, savedInstanceState)
+        return inflater.inflate(com.example.parsehtmlkotlin.R.layout.masterdev_fragment, container, false)
     }
 }

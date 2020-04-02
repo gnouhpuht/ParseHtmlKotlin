@@ -21,7 +21,12 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        vp.adapter to HomeAdapter(childFragmentManager)
+        val adapter = HomeAdapter(childFragmentManager)
+        adapter.addFragment(NewFragment(),"Tin tức")
+        adapter.addFragment(CODFragment(),"COD Star")
+        adapter.addFragment(MasterDevFragment(),"MasterDev")
+        vp.adapter =adapter
         tab.setupWithViewPager(vp)
     }
+
 }

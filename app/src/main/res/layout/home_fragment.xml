@@ -8,32 +8,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <LinearLayout
-            app:layout_scrollFlags="scroll"
-            android:layout_width="match_parent"
-            android:layout_height="?actionBarSize"
-            android:orientation="horizontal">
-
-            <androidx.appcompat.widget.AppCompatImageButton
-                android:id="@+id/btn_back"
-                android:layout_width="?actionBarSize"
-                android:layout_height="?actionBarSize"
-                android:background="?selectableItemBackgroundBorderless"
-                android:padding="16dp"
-                android:scaleType="centerInside"
-                android:src="@drawable/ic_chevron_left_black_24dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginRight="?actionBarSize"
-                android:gravity="center"
-                android:text="GHTK"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp" />
-        </LinearLayout>
-
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab"
             app:layout_scrollFlags="enterAlways"
